@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { useTitle } from "./useTitle";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
