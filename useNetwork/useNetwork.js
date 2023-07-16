@@ -13,6 +13,6 @@ export const useNetwork = (onChange) => {
       window.removeEventListener("online", handleChange);
       window.removeEventListener("offline", handleChange);
     };
-  });
+  }, []);
   return status;
 };
