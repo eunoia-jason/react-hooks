@@ -10,7 +10,7 @@ Collection of sexy React Hooks ready to install with NPM
 - [x] useFullscreen
 - [x] useHover
 - [x] useNetwork
-- [ ] useNotification
+- [x] useNotification
 - [x] useScroll
 - [x] useTabs
 - [x] usePreventLeave
