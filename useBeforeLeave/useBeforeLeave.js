@@ -1,4 +1,4 @@
-export const useBeforeLeave = (onBefore) => {
+const useBeforeLeave = (onBefore) => {
   const handle = (event) => {
     const { clientY } = event;
     if (clientY <= 0) {
@@ -13,3 +13,5 @@ export const useBeforeLeave = (onBefore) => {
     return () => document.removeEventListener("mouseout", handle);
   }, [onBefore]);
 };
+
+export default useBeforeLeave;

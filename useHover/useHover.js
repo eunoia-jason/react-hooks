@@ -1,4 +1,4 @@
-export const useHover = (onHover) => {
+const useHover = (onHover) => {
   const ref = useRef();
   useEffect(() => {
     const element = ref.current;
@@ -16,3 +16,5 @@ export const useHover = (onHover) => {
   }, [onHover]);
   return typeof onHover !== "function" ? undefined : ref;
 };
+
+export default useHover;

@@ -1,4 +1,4 @@
-export const useAxios = (opts, axiosInstance = defaultAxios) => {
+const useAxios = (opts, axiosInstance = defaultAxios) => {
   const [state, setState] = useState({
     loading: true,
     error: null,
@@ -30,3 +30,5 @@ export const useAxios = (opts, axiosInstance = defaultAxios) => {
   }, [trigger, axiosInstance, opts, state]);
   return { ...state, refetch };
 };
+
+export default useAxios;

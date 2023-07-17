@@ -1,4 +1,4 @@
-export const useClick = (onClick) => {
+const useClick = (onClick) => {
   const ref = useRef();
   useEffect(() => {
     const element = ref.current;
@@ -16,3 +16,5 @@ export const useClick = (onClick) => {
   }, [onClick]);
   return typeof onClick !== "function" ? undefined : ref;
 };
+
+export default useClick;
