@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 const useBeforeLeave = (onBefore) => {
   const handle = (event) => {
     const { clientY } = event;

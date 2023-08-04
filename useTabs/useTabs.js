@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const content = [
   {
     tab: "Section 1",
